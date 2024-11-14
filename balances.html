@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Balance Summary</title>
+</head>
+<body>
+    <h1>Balance Summary</h1>
+    <ul>
+        {% for participant, balance in participants.items() %}
+            <li>{{ participant }}: {{ balance | round(2) }}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Go Back</a>
+</body>
+</html>
