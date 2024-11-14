@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for
 import math
 
-app = Flask(__name__,template_folder='')
+app = Flask(__name__,template_folder='flask_deploy')
 
 # Store participants and expenses
 participants = {}
